@@ -28,8 +28,12 @@ The "criteria" is usually "first X bits are equal to zero". This allows you to c
 #####
 
 
-##### Functional Requirements #####
+##### How much compute power does it take to meet the criteria? #####
+On a typical laptop or smartphone, it generally takes under a second to create a token even when the criteria is "first 16 bits equal to zero". You can use this is a baseline and tweak as necessary.
+#####
 
+
+##### Functional Requirements #####
 JavaScript must be enabled
 
 The web form's submit button must have id="submitWithSha1"
@@ -41,13 +45,11 @@ The page's encoding type must be set to UTF-8 (meta charset tag & Content-Type h
 
 
 ##### Functional Recommendations #####
-
 Modify to use async functions so that page-load isn't stalled while tokens are generated - I plan on doing this but as of 01/10/2017 this is just a proof of concept.
 #####
 
 
 ##### Security Recommendations #####
-
 If you distribute this script file via a CDN, consider using Subresource Integrity (https://www.w3.org/TR/SRI/)
 
 Server should check for multiple repeat tokens from the same client

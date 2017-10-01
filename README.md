@@ -15,16 +15,19 @@ See http://dx.doi.org/10.6028/NIST.FIPS.180-4
 
 
 ##### What are these tokens and what do they do? #####
-1. Randomly generate a configurable-length word
+1. Web server sends security_trm.js code to a remote client.
 
-2. Check if that word's sha1 hash matches criteria
+2. Client randomly generates a configurable-length word
 
-3. If match, the client's token is that word - put it in a hidden field ready for the user to submit / POST
+3. Client checks if that word's SHA-1 hash matches criteria
 
-4. If no match, restart at step 1
+4. If match, the client's token is that word - put it in a hidden field ready for the user to submit / POST
 
+5. If no match, restart at step 2
 
-The "criteria" is usually "first X bits are equal to zero". This allows you to control the compute requirement dynamically and speed up or slow down form submissions as required.
+6. Upon receipt, server performs a single SHA-1 hash and matches against criteria to verify that the form submission is legitimate
+
+The "criteria" is usually "first X bits of the hash are equal to zero". This allows you to control the compute requirement dynamically and speed up or slow down form submissions as required.
 #####
 
 

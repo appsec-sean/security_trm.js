@@ -21,7 +21,7 @@ The web form's submit button must have id="submitWithSha1"
 
 The web form must include a hidden text field with id="sha1Str", max length 40
 
-The page's encoding type must be set to UTF-8 (<meta charset="utf-8"> & Content-Type header)
+The page's encoding type must be set to UTF-8 (meta charset tag & Content-Type header)
 #####
 
 ##### Functional Recommendations #####

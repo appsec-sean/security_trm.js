@@ -32,7 +32,7 @@ The "criteria" is usually "first X bits of the hash are equal to zero". This all
 
 
 ##### How much compute power does it take to meet the criteria? #####
-On a typical laptop or smartphone, it generally takes under a second to create a token even when the criteria is "first 16 bits equal to zero". You can use this is a baseline and tweak as necessary.
+On a typical laptop or smartphone, it generally takes under a second to create a token even when the criteria is "first 16 bits equal to zero". You can use this as a baseline and tweak as necessary.
 #####
 
 

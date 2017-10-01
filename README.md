@@ -8,7 +8,7 @@ Prevents bots that aren't javascript-capable, slows down bots that are
 
 Created by Sean Whiteley (sean@appsec.org.uk)
 
-Uses a JavaScript-optimised version of the SHA-1 Reference Implementation (not perfect, by any means)
+Uses my own JavaScript-optimised version of the SHA-1 Reference Implementation (not perfect, by any means)
 
 See http://dx.doi.org/10.6028/NIST.FIPS.180-4
 #####

@@ -13,6 +13,21 @@ Uses a JavaScript-optimised version of the SHA-1 Reference Implementation (not p
 See http://dx.doi.org/10.6028/NIST.FIPS.180-4
 #####
 
+
+##### What are these tokens and what do they do? #####
+1. Randomly generate a configurable-length word
+
+2. Check if that word's sha1 hash matches criteria
+
+3. If match, the client's token is that word - put it in a hidden field ready for the user to submit / POST
+
+4. If no match, restart at step 1
+
+
+The "criteria" is usually "first X bits are equal to zero". This allows you to control the compute requirement dynamically and speed up or slow down form submissions as required.
+#####
+
+
 ##### Functional Requirements #####
 
 JavaScript must be enabled
@@ -24,10 +39,12 @@ The web form must include a hidden text field with id="sha1Str", max length 40
 The page's encoding type must be set to UTF-8 (meta charset tag & Content-Type header)
 #####
 
+
 ##### Functional Recommendations #####
 
 Load this script after all other scripts so that it doesn't disrupt user interaction
 #####
+
 
 ##### Security Recommendations #####
 

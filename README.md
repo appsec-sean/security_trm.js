@@ -15,7 +15,7 @@ See http://dx.doi.org/10.6028/NIST.FIPS.180-4
 
 
 ##### What are these tokens and what do they do? #####
-1. Web server sends security_trm.js code to a remote client.
+1. Web server sends security_trm.js code to a remote client
 
 2. Client randomly generates a configurable-length word
 

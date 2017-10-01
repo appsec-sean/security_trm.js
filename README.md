@@ -42,7 +42,7 @@ The page's encoding type must be set to UTF-8 (meta charset tag & Content-Type h
 
 ##### Functional Recommendations #####
 
-Load this script after all other scripts so that it doesn't disrupt user interaction
+Modify to use async functions so that page-load isn't stalled - I plan on doing this but as of 01/10/2017 this is just a proof of concept.
 #####
 
 

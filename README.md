@@ -63,3 +63,21 @@ Errors should trigger a redirect to the "javascript-disabled" page or equivalent
 
 If you're using a pre-populated value for sha1Str, check that it doesn't meet the token criteria ;)
 #####
+
+
+##### Testing #####
+To test / verify operation, you can use the simple HTML below:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<form action="#" method="post">
+<button id="submitWithSha1">Submit</button>
+<input type="text" name="sha1Str" id="sha1Str" size="40" />
+</form>
+</body>
+</html>
+#####

@@ -41,7 +41,7 @@ JavaScript must be enabled
 
 The web form's submit button must have id="submitWithSha1"
 
-The web form must include a hidden text field with id="sha1Str", max length 40
+The web form must include a hidden text field with id="sha1Str", max length equal to your token / word length (default 20)
 
 The page's encoding type must be set to UTF-8 (meta charset tag & Content-Type header)
 #####
